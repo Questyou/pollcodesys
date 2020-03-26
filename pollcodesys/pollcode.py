@@ -168,12 +168,51 @@ def scode2(schoice):
 
 
 
-def scode3(choice):
-    pass
+def scode3(schoice):
+    incount = inputbox('\033[1;32m  请输入要生成的25位混恒序列号数量： \33[0m' , 1 ,0 )
+    while incount == 0:
+        incount = inputbox('\033[1;32m  请输入要生成的25位混恒序列号数量： \33[0m', 1, 0)
+    randstr.clear()
+    for j in range(int(incount)):
+        strone = ''
+        for i in range(25):
+            strone = strone + random.choice(letter)
+        # @每五位之间增加-横线
+        strtwo = strone[:5] + '-' + strone[5:10] + '-' + strone[10:15] + '-' + strone[15:20] + '-' + strone[10:25] + '\n'
+        randstr.append(strtwo)
+    wfile(randstr , 'scode ' + str(schoice) + '.txt', '' , '已经生成25位混合序列号' , 'codepath')
 
 
-def scode4(param, choice):
-    pass
+def ffcode(scount, typestr, ismessage, schoice):
+    randstr.clear()
+    for j in range(int(scount)):
+        strpro = typestr[0].upper()  #转为大写
+        strtype = typestr[1].upper()
+        strclass = typestr[2].upper()
+        randfir = random.sample(number, 3 ) #随机抽取防伪码的三个位置
+        randsec = sorted(randfir)  # 对抽取的位置紧邻排序，并复制给randsec
+        letterone = ''
+        for i in range(9):
+            letterone = letterone + random.choice(number)
+        #将三个字母按照randsec变量中存储的位置添加到数字防伪码中
+        sim = str(letterone[0:int(randsec[0])]) + strpro + str(
+            letterone[int(randsec[0]):int(randsec[1])]) + strtype + str(
+            letterone[int(randsec[1]):int(randsec[2])])+strclass + str(
+            letterone[int(randsec[2]):9]) + '\n'
+        randstr.append(sim)
+        wfile(randstr , typestr + 'scode'+  str(schoice)+ '.txt' , ismessage, '生成防伪码共计：' , 'codepath')
+
+
+
+
+def scode4(schoice):
+    intype = inputbox('\033[1;32m   请输入数据分析三位编码:  \33[0m' , 2 ,3 )
+    while not str.isalpha(intype) or len(intype) != 3:
+        intype = inputbox('\033[1;32m   请重新输入数据分析三位编码:  \33[0m' , 2 ,3)
+    incount = inputbox('\033[1;32m  请输入要生成的数据分析防伪码数控' ,1 , 0)
+    while int(incount) == 0:
+        incount = inputbox('\033[1;32m  请重新输入要生成的数据分析防伪码数控', 1, 0)
+    ffcode(incount, intype, '', schoice)
 
 
 def scode5(param):
@@ -210,7 +249,7 @@ while i < 9:
         if choice == 3:  #生成6位数字防伪编码
             scode3(choice)
         if choice == 4:  #生成6位数字防伪编码
-            scode4('' , choice)
+            scode4(choice)
         if choice == 5:  #生成6位数字防伪编码
             scode5(choice)
         if choice == 6:  #生成6位数字防伪编码
