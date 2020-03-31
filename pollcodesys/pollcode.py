@@ -215,7 +215,8 @@ def scode4(schoice):
     ffcode(incount, intype, '', schoice)
 
 
-def scode5(param):
+def scode5(schoice):
+
     pass
 
 
@@ -224,6 +225,24 @@ def scode6(param):
 
 
 def scode7(param):
+    mainid = inputbox('\033[1;32m   请输入En 13的国家代码:  \33[0m', 1, 0)
+    while int(mainid) < 1 or len(mainid) != 3:
+        mainid = inputbox('\033[1;32m   请重新En 13的国家代码: :  \33[0m',1 , 0)
+    compid = inputbox('\033[1;32m  请输入4位企业代码', 1, 0)
+    while int(compid) == 0:
+        compid = inputbox('\033[1;32m  请重新输入4位企业代码', 1, 0)
+    incount = inputbox('\033[1;32m  请输入要生成的数量', 1, 0)
+    while int(incount) == 0:
+        incount = inputbox('\033[1;32m  请重新输入要生成的数量', 1, 0)
+    mkdir('bacode')
+    for j in range(int(incount)):
+        strone = ''
+        for i in range(5):
+            strone = strone + str(random.choice(number))
+        barcode = mainid + compid + strone
+        evensum = int(bar[1])
+
+
     pass
 
 
