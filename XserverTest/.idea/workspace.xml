@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed221182-7578-4fb4-86d1-71b8d04560d3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../SOPTest/添加机柜.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOPTest/添加维护任务记录.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOPTest/添加维护记录.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SOPTest/维护模板.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmallTest/Part1/GetCMDCommondBack.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmallTest/Part1/TestInputStaus.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SmallTest/Part1/TestNetService.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudyTest/Cookie.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StudyTest/HTML5播放器.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../TestNetService.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UMSTest/LoginUMS.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../UMSTest/UMS添加用户.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/Analysis-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/EXE-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/PKG-00.pkg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/PKG-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/PYZ-00.pyz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/PYZ-00.toc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/TestNetService.exe.manifest" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/base_library.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/warn-TestNetService.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../build/TestNetService/xref-TestNetService.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../dist/TestNetService.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../pollcodesys/pollcode.py" beforeDir="false" afterPath="$PROJECT_DIR$/../pollcodesys/pollcode.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1mljljMVEwVRgwdWh4EEIUAuljM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed221182-7578-4fb4-86d1-71b8d04560d3" name="Default Changelist" comment="" />
+      <created>1610075224379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610075224379</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="126" key="FileChooserDialogImpl" timestamp="1610075282187">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="463" y="126" key="FileChooserDialogImpl/0.0.1366.738/1366.-311.1920.1050@0.0.1366.738" timestamp="1610075282187" />
+  </component>
+</project>
