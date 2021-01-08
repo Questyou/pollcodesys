@@ -9,8 +9,9 @@ from string import *
 root = tkinter.Tk()  # tkinter为python 标准化图形界面接口，创立跟窗口
 
 number = '1234567890'
-letter = 'ABCDEFEGHIJKLMNOPQRSTUVWXYZ1234567890'
-allis = '1234567890ABCDEFEGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+'
+letter = 'ABCDEFEGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+sp = '!@#$%^&*()_+'
+allis = '1234567890ABCDEFEGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%&*'
 i = 0
 randstr = []
 fourth = []
@@ -167,6 +168,20 @@ def scode2(schoice):
     wfile(randstr , 'scode'+ str(schoice) + '.txt', '已生成生成9位系列产品防伪码共计:' , '' , 'codepath')
 
 
+def qinghaimima(schoice):
+    incount = inputbox('\033[1;32m  请输入要生成的9位混恒序列号数量： \33[0m', 1, 0)
+    while incount == 0:
+        incount = inputbox('\033[1;32m  请输入要生成的9位混恒序列号数量： \33[0m', 1, 0)
+    randstr.clear()
+    for j in range(int(incount)):
+        strone = ''
+        for i in range(9):
+            strone = strone + random.choice(allis)
+        # @每五位之间增加-横线
+        strtwo = strone[:9]  + '\n'
+        randstr.append(strtwo)
+    wfile(randstr, 'scode ' + str(schoice) + '.txt', '', '已经生成9位混合序列号', 'codepath')
+
 
 def scode3(schoice):
     incount = inputbox('\033[1;32m  请输入要生成的25位混恒序列号数量： \33[0m' , 1 ,0 )
@@ -261,6 +276,8 @@ while i < 9:
     choice = input('\033[1;32m  请输入您要操作的菜单选项 \33[0m')
     if len(choice) != 0:
         choice = input_validation(choice)
+        if choice == 10:  #生成6位数字防伪编码
+            qinghaimima(str(choice))
         if choice == 1:  #生成6位数字防伪编码
             scode1(str(choice))
         if choice == 2:  #生成6位数字防伪编码
